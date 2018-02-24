@@ -55,12 +55,11 @@ const setStartDate = (startDate) => ({
   startDate
 });
 
+// SET_END_DATE
 const setEndDate = (endDate) => ({
   type: 'SET_END_DATE',
   endDate
 });
-
-// SET_END_DATE
 
 // Expenses Reducer
 
@@ -133,6 +132,7 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
 };
 
 // Get visible expenses
+
 const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
   return expenses.filter((expense) => {
     const startDateMatch = typeof startDate !== 'number' || expense.createdAt >= startDate;
