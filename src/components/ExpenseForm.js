@@ -1,18 +1,14 @@
 import React from 'react';
 import moment from 'moment';
-import ThemedStyleSheet from 'react-with-styles/lib/ThemedStyleSheet';
-import aphroditeInterface from 'react-with-styles-interface-aphrodite';
-import DefaultTheme from 'react-dates/lib/theme/DefaultTheme';
-import 'react-dates/initialize';
-import 'react-dates/lib/css/_datepicker.css';
 import { SingleDatePicker } from 'react-dates';
+import 'react-dates/lib/css/_datepicker.css';
 
-ThemedStyleSheet.registerInterface(aphroditeInterface);
-ThemedStyleSheet.registerTheme(DefaultTheme);
-
-// const now = moment().format('MMM Do, YYYY');
-// console.log(moment().format('MMM Do, YYYY'));
-console.log(moment());
+// import ThemedStyleSheet from 'react-with-styles/lib/ThemedStyleSheet';
+// import aphroditeInterface from 'react-with-styles-interface-aphrodite';
+// import DefaultTheme from 'react-dates/lib/theme/DefaultTheme';
+// import 'react-dates/initialize';
+// ThemedStyleSheet.registerInterface(aphroditeInterface);
+// ThemedStyleSheet.registerTheme(DefaultTheme);
 
 export default class ExpenseForm extends React.Component {
   constructor(props) {
