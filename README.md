@@ -42,7 +42,7 @@ Go to http://localhost:8080 on your browser
 yarn test
 ```
 
-## Ready to be used with
+## Built with
 
 * React
 * Redux
